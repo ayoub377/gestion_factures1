@@ -1,0 +1,19 @@
+<div class="container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let facture of factures._embedded.products">
+      <td>{{facture.id}}</td>
+      <td>{{facture.name}}</td>
+      <td>{{facture.quantity}}</td>
+    </tr>
+    </tbody>
+
+  </table>
+</div>
