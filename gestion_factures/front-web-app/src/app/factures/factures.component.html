@@ -3,17 +3,25 @@
     <thead>
     <tr>
       <th>ID</th>
-      <th>Name</th>
-      <th>Quantity</th>
+      <th>DATE</th>
+      <th>CUSTOMER ID</th>
+      <th>DETAILS</th>
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let facture of factures._embedded.products">
+    <tr *ngFor="let facture of factures._embedded.bills">
       <td>{{facture.id}}</td>
-      <td>{{facture.name}}</td>
-      <td>{{facture.quantity}}</td>
+      <td>{{facture.billDate|date:'dd/MM/yyyy'}}</td>
+      <td>{{facture.customerId}}</td>
+      <td>
+        <button class="btn btn-success" (click)="getOrderDetails(facture)">
+        Order Details
+        </button>
+      </td>
     </tr>
     </tbody>
-
   </table>
 </div>
+
+
+

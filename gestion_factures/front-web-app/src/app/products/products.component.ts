@@ -6,13 +6,14 @@ import {HttpClient} from "@angular/common/http";
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
+
 export class ProductsComponent implements OnInit{
   public products: any;
 
-  constructor(private http:HttpClient) {}
+  constructor(private http:HttpClient) { }
 
   ngOnInit() {
-    this.http.get('http://localhost:8888/products')
+    this.http.get('http://localhost:8888/INVENTORY-SERVICE/products')
       .subscribe((data) => {
         this.products = data;
       });

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gestion_factures/billing-service/billing-service.iml" filepath="$PROJECT_DIR$/gestion_factures/billing-service/billing-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestion_factures/customer-service/customer-service.iml" filepath="$PROJECT_DIR$/gestion_factures/customer-service/customer-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestion_factures/discovery-service/discovery-service.iml" filepath="$PROJECT_DIR$/gestion_factures/discovery-service/discovery-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestion_factures/gateway/gateway.iml" filepath="$PROJECT_DIR$/gestion_factures/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/gestion_factures1.iml" filepath="$PROJECT_DIR$/.idea/gestion_factures1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestion_factures/inventory-service/inventory-service.iml" filepath="$PROJECT_DIR$/gestion_factures/inventory-service/inventory-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestion_factures/randombilling-service/randombilling-service.iml" filepath="$PROJECT_DIR$/gestion_factures/randombilling-service/randombilling-service.iml" />
+    </modules>
+  </component>
+</project>

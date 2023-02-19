@@ -23,4 +23,10 @@ public class ProductItem {
     private double discount;
     @Transient
     private Product product;
+
+
+    public double getAmount(){
+     return quantity*price-(1-discount);
+    }
+
 }

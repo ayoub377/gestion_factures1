@@ -1,7 +1,35 @@
-# Manage-invoices
-#Créer une application basée sur une architecture micro-service qui permet de gérer les factures contenant des produits et appartenant à un client.#
-1.Créer le micro-service customer-service qui permet de gérer les client:
- -Les dependances utiliser :Spring Web,Spring Data JPA,H2DataBase,Lombook,Rest Repositories,Eureka Discovery Client,Spring Boot Actuator.
- -Pour le teste :localhost:8081/customers 
-<img width="854" alt="Screenshot_20221208_091817" src="https://user-images.githubusercontent.com/56719281/206573638-f2a738df-da97-4b00-940e-ed7b1ec46064.png">
-<img width="879" alt="Screenshot_20221208_094136" src="https://user-images.githubusercontent.com/56719281/206573656-dee657cd-19a5-4191-ac4f-442216eb2903.png">
+# Projet Jee Systeme distribuees
+
+### Realise par Ayoub Ennaoui
+
+#### customer micro service
+![](C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\customers_api.png) (C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\eureka.png)
+
+#### products micro service
+![](C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\products_api.png) (C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\eureka.png)
+
+#### products items micro service
+![](C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\product_item.png) (C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\eureka.png)
+
+#### eureka discovery client
+![](C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\eureka.png) (C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\eureka.png)
+
+#### Gateway 
+![](C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\gateway.png) (C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\eureka.png)
+
+#### Keyclok Authentification
+![](C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\keycloak.png) (C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\eureka.png)
+
+#### Front end 
+![](C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\customers_front.png) (C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\eureka.png)
+
+![](C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\products_front.png) (C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\eureka.png)
+
+![](C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\customer_orders_front.png) (C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\eureka.png)
+
+#### Docker + Kafka
+
+![](C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\docker_kafka_broker.png) (C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\eureka.png)
+
+#### Kafka-producer
+![](C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\publish_producer.png) (C:\Users\ayoub\MyProjects\gestion_factures1\gestion_factures\projet_jee_images\eureka.png)

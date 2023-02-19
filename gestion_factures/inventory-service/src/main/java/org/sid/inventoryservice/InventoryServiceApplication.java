@@ -27,6 +27,11 @@ public class InventoryServiceApplication {
                             Product.builder().name("SmartPhone").quantity(31).price(900).build()
                     )
             );
+            productRepository.findAll().forEach(
+                    p->{
+                        System.out.println(p.getName());
+                    }
+            );
         };
     }
 

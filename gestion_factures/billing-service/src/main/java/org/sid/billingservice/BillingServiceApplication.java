@@ -13,6 +13,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 
 import java.util.Collection;
 import java.util.Date;
@@ -27,11 +28,15 @@ public class BillingServiceApplication {
     }
 
     @Bean
-    CommandLineRunner start(BillRepository billRepository, ProductItemRepository productItemRepository,
-                            CustomerRestClient customerRestClient, ProductRestClient productRestClient){
+    CommandLineRunner start(BillRepository billRepository,
+                            ProductItemRepository productItemRepository,
+                            CustomerRestClient customerRestClient,
+                            ProductRestClient productRestClient,
+                            RepositoryRestConfiguration restConfiguration){
         return args -> {
+            restConfiguration.exposeIdsFor(Bill.class);
             Collection<Product> products=productRestClient.allProducts().getContent();
-            Long customerId=1L;
+            Long customerId= 1L;
             Customer customer=customerRestClient.findCustomerById(customerId);
             if(customer==null) throw new RuntimeException("Customer not found");
             Bill bill=new Bill();
